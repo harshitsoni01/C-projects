@@ -72,4 +72,86 @@ print("""\
 		  do you wanna cont?
 		  1.yes 2.no
 """)#this can be used for mutliple lines of strings
+#looping 
 
+x = [i for i in range(10)]#this is use for making a list using 'for' loop and variable assignment
+print(x)
+
+for  x in range(3,8):
+	print(x)
+
+for x in range(3,8,2):
+	print(x)
+
+#WHILE loop
+count=0
+while count<5:
+	print("NUmbers using while loop %d"%count)
+	count +=1
+
+#break
+count= 0 
+while 1:
+	print("NUmbers using break while looping %d"%count)
+	count+=1
+	if count>=5:
+		break
+
+#contiune
+for x in range(10):
+	if x % 2==0:
+		continue #skips the choosen number/thing
+print("Odd numbers using contiune and for loop %d"%x)#prints odd numbers 
+print("Number of odd numbers are %d" %count)
+	
+for x in range(10):
+	if not x % 2==0:
+		continue #skips the choosen number/thing
+	print("Even numbers using contiune and for loop %d"%x)#prints even numbers 
+	
+	
+# Prints out 0,1,2,3,4 and then it prints "count value reached 5"
+# "else" can be used with loops
+count=0
+while(count<5):
+    print(count)
+    count +=1
+else:
+    print("count value reached %d" %(count))
+
+# Prints out 1,2,3,4
+for i in range(1, 10):
+    if(i%5==0):
+        break
+    print(i)
+else:
+    print("this is not printed because for loop is terminated because of break but not due to fail in condition")
+	
+for i in range(10):
+	print(i)
+else:
+	print("this 10")		
+	
+#Functions 
+
+def my_function():#defining a function 
+	print("This is a function.")
+	
+my_function()#calling a function
+
+username = "har"
+greeting = "shit"
+def my_function_with_args(username, greeting):
+    print("Hello, %s , From My Function!, I wish you %s"%(username, greeting))
+
+my_function_with_args(username, greeting)
+
+def adding_two_strings(username, greeting):
+	return username + greeting
+print(adding_two_strings(username, greeting))
+
+a = 2
+b = 3
+def sum_two_numbers(a, b):
+    return a + b
+print(sum_two_numbers(a, b))	
